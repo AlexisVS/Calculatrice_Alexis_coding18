@@ -1,0 +1,124 @@
+input[type="reset"]:focus, button:focus {
+  outline: none;
+}
+
+body {
+  overflow: hidden;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #666666;
+}
+
+#video {
+  width: 100vw;
+  position: absolute;
+  -webkit-animation: videoRainbow 2s infinite;
+          animation: videoRainbow 2s infinite;
+}
+
+@media screen and (max-width: 1080px) {
+  #video {
+    width: auto;
+    height: 100vh;
+  }
+}
+
+#calculette {
+  z-index: 10;
+  background-color: transparent;
+  width: 40vw;
+}
+
+#calculette #resultat {
+  text-indent: 1rem;
+  color: rgba(0, 255, 200, 0.7) !important;
+  font-weight: bolder;
+  background-color: rgba(105, 105, 105, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  border-bottom: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.5rem;
+  border-radius: 0;
+}
+
+#calculette #touches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#calculette #touches button {
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  background-color: rgba(105, 105, 105, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  font-size: 2.5rem;
+  height: 50px;
+  width: 10vw;
+}
+
+#calculette #touches button:hover {
+  background-color: rgba(105, 105, 105, 0.2);
+}
+
+#calculette #touches button:focus {
+  background-color: rgba(105, 105, 105, 0.3);
+}
+
+#calculette #touches #boutton7 {
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#calculette #touches #boutton16 {
+  width: 100%;
+}
+
+@-webkit-keyframes videoRainbow {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes videoRainbow {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+/*# sourceMappingURL=app.css.map */
